@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<meta lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        enhanced-form
+    </title>
+</head>
+<body>
+    <header>Simple web page</header>
+    <section id="lists">
+        <h2>List section</h2>
+        <h3>unordered lists</h3>
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+        <h3>ordered list</h3>
+        <ol>
+            <li>step one</li>
+            <li>step two</li>
+            <li>step three</li>
+
+        </ol>
+    </section>
+    <section id="tables">
+        <h2>tables section</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td> Name</td>
+                    <td>email</td>
+                    <td>role</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>agent 001</td>
+                    <td>agent001@gmail.com</td>
+                    <td>front-developer</td>
+                </tr>
+                <tr>
+                    <td>agent 002</td>
+                    <td>agent002@gmail.com</td>
+                    <td>backend developer</td>
+                </tr>
+                <tr>
+                    <td>agent 003</td>
+                    <td>agent003@gmail.com</td>
+                    <td>project manager</td>
+                </tr>
+                <tr>
+                    <td>CEO James</td>
+                    <td>ceojames@gmail.com</td>
+                    <td>Stakeholder</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="media">
+        <h2>Media Scetion</h2>
+        <img src="https//:via.placeholder.com/400x200" alt="placeholder">
+        <audio controls>
+            <source src="" type="">
+        </audio>
+
+    </section>
+    <section id="form">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal info</legend>
+                <label for="name">full name</label>
+                <input type="text" id="name" name="name" required minlength="4" placeholder="enter your name">
+
+                <label for="email"> your email</label>
+                <input type="email" id="email" name="email" required placeholder="enter your email">
+
+                <label for="contact"> contact</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="07********">
+            </fieldset>
+            <fieldset>
+                <legend>account details</legend>
+                <label for="username">username</label>
+                <input type="text" id="username" name="username" required minlength="3" placeholder=" enter your username ">
+
+                <label for="password">password</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="enter 8 digit password">
+
+            </fieldset>
+            <fieldset>
+                <legend>additional info</legend>
+                <label for="country">country</label>
+                <select name="country" id="country" required>
+                    <option value="kenya"></option>
+                    <option value="uganda"></option>
+                    <option value="tanzania"></option>
+                </select>
+                <label for="comments">comments</label>
+                <textarea name="comments" id="comments" rows="5"></textarea>
+            </fieldset>
+            <button type="submit">submit form</button>
+            <button type="reset"> reset form</button>
+        </form>
+    </section>
+    
+</body>
+<html>
